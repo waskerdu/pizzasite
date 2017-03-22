@@ -1,0 +1,75 @@
+<!-- Stupid syntax -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pizza Ordering Site</title> 
+		
+	</head>
+	<body onclick="updatePrice()">
+	<!-- size -->
+	<form>
+		<input type="radio" name="size" class="size" id="personal"> personal<br>
+        <input type="radio" name="size" class="size" id="medium" checked="checked"> medium<br>
+        <input type="radio" name="size" class="size" id="large"> large<br>
+        <input type="radio" name="size" class="size" id="xl"> extra large
+	</form>
+	
+	<!-- meats -->
+	<form>
+		<input type="checkbox" name="meats" class="meats" value="pepperoni"> pepperoni<br>
+        <input type="checkbox" name="meats" class="meats" value="sausage"> sausage<br>
+        <input type="checkbox" name="meats" class="meats" value="canadianbacon"> canadian bacon<br>
+        <input type="checkbox" name="meats" class="meats" value="groundbeef"> ground beef<br>
+        <input type="checkbox" name="meats" class="meats" value="anchovy"> anchovy<br>
+        <input type="checkbox" name="meats" class="meats" value="chicken"> chicken
+	</form>
+
+	<!-- cheese -->
+	<form>
+		<input type="radio" name="cheese" class="cheese" id="regular" checked="checked"> regular<br>
+        <input type="radio" name="cheese" class="cheese" id="nocheese"> no cheese<br>
+        <input type="radio" name="cheese" class="cheese" id="extra"> extra
+	</form>
+
+	<!-- crust -->
+	<form>
+		<input type="radio" name="crust" class="crust" id="plain" checked="checked"> plain<br>
+        <input type="radio" name="crust" class="crust" id="garlic"> garlic<br>
+        <input type="radio" name="crust" class="crust" id="cheesestuffed"> cheesestuffed<br>
+        <input type="radio" name="crust" class="crust" id="spicycrust"> spicy crust<br>
+        <input type="radio" name="crust" class="crust" id="housespecial"> house special
+	</form>
+
+	<!-- sauce -->
+	<form>
+		<input type="radio" name="sauce" class="sauce" value="marinara" checked="checked"> marinara<br>
+        <input type="radio" name="sauce" class="sauce" value="white"> white<br>
+        <input type="radio" name="sauce" class="sauce" value="bbq"> bbq<br>
+        <input type="radio" name="sauce" class="sauce" value="none"> none
+	</form>
+
+	<!-- veggies Tomatoes, Onions, Olives, Green Peppers, Mushrooms, Pineapple, Spinach, and Jalapeno-->
+	<form>
+		<input type="checkbox" name="veggie" class="veggie" value="tomatoes"> tomatoes<br>
+        <input type="checkbox" name="veggie" class="veggie" value="onions"> onions<br>
+        <input type="checkbox" name="veggie" class="veggie" value="olives"> olives<br>
+        <input type="checkbox" name="veggie" class="veggie" value="greenpeppers"> green peppers<br>
+        <input type="checkbox" name="veggie" class="veggie" value="mushrooms"> mushrooms<br>
+        <input type="checkbox" name="veggie" class="veggie" value="pineapple"> pineapple<br>
+        <input type="checkbox" name="veggie" class="veggie" value="spinach"> spinach<br>
+        <input type="checkbox" name="veggie" class="veggie" value="jalapeno"> jalapeno
+	</form>
+
+	<p>cost</p>
+
+	<p id="base"></p>
+	<p id="meats"></p>
+	<p id="crust"></p>
+	<p id="veggies"></p>
+	<p id="total"></p>
+
+	<script src="./pizzaScript.js" type="text/javascript"></script>
+	
+	</body>
+</html>
